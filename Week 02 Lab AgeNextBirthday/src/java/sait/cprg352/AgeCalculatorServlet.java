@@ -22,11 +22,9 @@ public class AgeCalculatorServlet extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-        
         // get the parameters from the URL
         String age = request.getParameter("age");
 
-        
         // set the JSP request variables to the values first name and last name
         request.setAttribute("ageNext", (age+1));
         
@@ -37,7 +35,6 @@ public class AgeCalculatorServlet extends HttpServlet
             getServletContext().getRequestDispatcher("/WEB-INF/ageCalculator.jsp").forward(request, response);
             return;
         }
-        
         getServletContext().getRequestDispatcher("/WEB-INF/ageCalculator.jsp").forward(request, response);
     }
 
