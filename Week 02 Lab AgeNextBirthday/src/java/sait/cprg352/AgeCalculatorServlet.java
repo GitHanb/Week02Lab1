@@ -23,12 +23,13 @@ public class AgeCalculatorServlet extends HttpServlet
             throws ServletException, IOException 
     {
         // get the parameters from the URL
-        String age = request.getParameter("age");
+        String ageString = request.getParameter("age");
+        int ageNumber = Integer.parseInt(ageString);
 
         // set the JSP request variables to the values first name and last name
-        request.setAttribute("ageNext", (age+1));
+        request.setAttribute("ageNext", (ageNumber+1));
         
-        if (age == null || age.trim().isEmpty()) 
+        if (ageString == null || ageString.trim().isEmpty()) 
         {
             request.setAttribute("errorMessage", "Please enter a number");
 
