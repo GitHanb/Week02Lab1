@@ -19,7 +19,8 @@
                 <input type="submit" value="Age next birthday">  
             </form>    
         </div>
-        ${ageNext}<br>
-        ${errorMessage}
+         
+        ${message}
+     
     </body>
 </html>
