@@ -47,7 +47,7 @@ public class AgeCalculatorServlet extends HttpServlet
         }
         catch (NumberFormatException e)
         {
-            request.setAttribute("message", "You must enter a number.");
+            request.setAttribute("message", "You must enter an integer.");
             request.setAttribute("age", ageString);
             getServletContext().getRequestDispatcher("/WEB-INF/ageCalculator.jsp").
                 forward(request, response);
