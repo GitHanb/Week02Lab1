@@ -24,10 +24,6 @@ public class AgeCalculatorServlet extends HttpServlet
     {
         // get the parameters from the URL
         String ageString = request.getParameter("age");
-        
-        //int ageNumber = Integer.parseInt(ageString);
-        
-        //request.setAttribute("ageNext", (ageNumber+1));
        
 
         // set the JSP request variables to the values first name and last name
