@@ -6,7 +6,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>AgeCalculatorServlet</servlet-name>
-        <url-pattern>/ageCalculator</url-pattern>
+        <url-pattern>/AgeCalculator</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
